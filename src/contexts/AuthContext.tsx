@@ -84,8 +84,8 @@ const AuthProvider: FunctionComponent<AuthProviderProps> = ({ children }) => {
   }
 
   async function updateUser(updatedUserData: Partial<User>) {
-    dispatch({ type: "update", payload: updatedUserData });
-  }
+/*     dispatch({ type: "update", payload: updatedUserData });
+ */  }
 
   return (
     <AuthContext.Provider

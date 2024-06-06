@@ -6,7 +6,7 @@ import { PublicRoutes } from "../../types/routes";
 import { AvatarGenerator } from "random-avatar-generator";
 
 export default function SignUp() {
-  const generator = new AvatarGenerator();
+  /* const generator = new AvatarGenerator();
   const [showModal, setShowModal] = useState(false);
 
   const [newUser, setNewUser] = useState<User>({
@@ -71,7 +71,7 @@ export default function SignUp() {
         {showModal ? <SignUpModal onModal={setShowModal} /> : null}
       </form>
     </div>
-  );
+  ); */
 }
 
 function Name({ updateUser }) {

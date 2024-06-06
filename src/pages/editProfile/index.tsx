@@ -32,20 +32,20 @@ export const EditProfile = () => {
     e.preventDefault();
 
     const updatedUserData = {};
-
-    if (newEmail !== "" && newEmail !== user.email) {
-      updatedUserData.email = newEmail;
-    }
-    if (newGender !== "" && newGender !== user.gender) {
-      updatedUserData.gender = newGender;
-    }
-    if (newPassword !== "" && newPassword !== user.password) {
-      updatedUserData.password = newPassword;
-    }
-    if (newCountry !== "" && newCountry !== user.country) {
-      updatedUserData.country = newCountry;
-    }
-
+    /* 
+        if (newEmail !== "" && newEmail !== user.email) {
+          updatedUserData.email = newEmail;
+        }
+        if (newGender !== "" && newGender !== user.gender) {
+          updatedUserData.gender = newGender;
+        }
+        if (newPassword !== "" && newPassword !== user.password) {
+          updatedUserData.password = newPassword;
+        }
+        if (newCountry !== "" && newCountry !== user.country) {
+          updatedUserData.country = newCountry;
+        }
+     */
     try {
       const response = await fetch(`http://localhost:3000/users/${user.id}`, {
         method: "PATCH",

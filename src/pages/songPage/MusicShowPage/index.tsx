@@ -13,11 +13,11 @@ export function MusicShowPage() {
           ? songs[currentSongIndex].name
           : ""}
       </p>
-      <p className="mt-2 text-lg text-center text-white">
+      {/*   <p className="mt-2 text-lg text-center text-white">
         {songs.length > 0 && currentSongIndex !== null
           ? songs[currentSongIndex].artist
           : ""}
-      </p>
+      </p> */}
     </section>
   );
 }

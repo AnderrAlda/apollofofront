@@ -130,11 +130,7 @@ export function SmallShowPlaySong({ selectedSongId }: props) {
                 ? songs[currentSongIndex].name
                 : ""}
             </p>
-            <p className="text-white ml-5 text-sm hover:text-btn">
-              {songs.length > 0 && currentSongIndex !== null
-                ? songs[currentSongIndex].artist
-                : ""}
-            </p>
+
           </div>
         </Link>
 
@@ -161,9 +157,8 @@ export function SmallShowPlaySong({ selectedSongId }: props) {
           onChange={handleSeekChange}
           onMouseUp={handleSeekMouseUp}
           style={{
-            background: `linear-gradient(to right, green ${
-              played * 100
-            }%, transparent 0%)`,
+            background: `linear-gradient(to right, green ${played * 100
+              }%, transparent 0%)`,
             WebkitAppearance: "none",
           }}
         />

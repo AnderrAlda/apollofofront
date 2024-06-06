@@ -70,11 +70,11 @@ export default function AlbumComponents() {
       albumSongs[song.id] = {
         id: song.id,
         name: song.name,
-        artist: song.artist,
+        artist: "",
         url: song.url,
         thumbnail: song.thumbnail,
-        genre: song.genre,
-        liked: song.liked,
+        genre: "",
+        liked: false,
       };
     });
   }
