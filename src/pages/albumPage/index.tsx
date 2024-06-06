@@ -1,7 +1,6 @@
 import { NavBar } from "../../components/navbar";
 
 import { useAuth } from "../../contexts/AuthContext";
-import { deleteSongFromUserLikedSongs } from "../../utils";
 import IndividualSong from "../../components/individualSong";
 import { usePlayer } from "../../contexts/AudioPlayerContext";
 import VerticalScrollLayout from "../../layouts/verticalScroll";
