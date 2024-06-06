@@ -8,7 +8,7 @@ import { User } from "../../utils";
 import { getUser, getUserById } from "../../services/UserServices";
 
 export const UserPage = () => {
-  const baseUrl = "http://localhost:4000/api/user/account";
+  const baseUrl = "https://apollofybackend2-production.up.railway.app//api/user/account";
   const [deletedMessage, setDeletedMessage] = useState<string>("");
 
   const deleteUser = async () => {

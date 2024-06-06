@@ -33,7 +33,7 @@ export interface ArtistInfo {
 }
 
 export default function useArtist(userId: string) {
-  const baseUrl = `http://localhost:4000/api/artist/${userId}`;
+  const baseUrl = `https://apollofybackend2-production.up.railway.app/api/artist/${userId}`;
   
   const [artistInfo, setArtistInfo] = useState({
     artist: [],

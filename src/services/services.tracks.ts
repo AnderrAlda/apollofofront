@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:4000/api/track";
+const baseUrl = "https://apollofybackend2-production.up.railway.app/api/track";
 
 type Track = {
   name: string;

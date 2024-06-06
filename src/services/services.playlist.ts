@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:4000/api/playlist";
+const baseUrl = "https://apollofybackend2-production.up.railway.app/api/playlist";
 
 export interface Playlist {
   id: number;

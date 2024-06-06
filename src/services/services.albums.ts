@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:4000/api/album";
+const baseUrl = "https://apollofybackend2-production.up.railway.app/api/album";
 
 export const addAlbum = async (albumData: {
   name: string;
@@ -24,7 +24,7 @@ export const getAlbums = async () => {
   }
 };
 
-const baseUrl2 = "http://localhost:4000/api/album/withTracks";
+const baseUrl2 = "https://apollofybackend2-production.up.railway.app/api/album/withTracks";
 
 export const getAlbumsWithTracks = async () => {
   try {

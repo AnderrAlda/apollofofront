@@ -10,7 +10,7 @@ export interface SearchResults {
   }
 
 export default function useSearchResults(filter:string) {
-    const baseUrl = `http://localhost:4000/api/search?query=${filter}`;
+    const baseUrl = `https://apollofybackend2-production.up.railway.app/api/search?query=${filter}`;
     const [searchResults, setSearchResults] = useState({
       songs: [],
       artists: [],

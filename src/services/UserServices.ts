@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:4000/api/user/account/";
+const baseUrl = "https://apollofybackend2-production.up.railway.app/api/user/account/";
 
 export const getUserById = async (userId: number) => {
   try {

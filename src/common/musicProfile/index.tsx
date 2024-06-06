@@ -63,7 +63,7 @@ export function TopArtist() {
     const fetchArtists = async () => {
       try {
         const artistsData = await getArtists(
-          "http://localhost:4000/api/allartists/"
+          "https://apollofybackend2-production.up.railway.app/api/allartists/"
         );
         setArtists(artistsData);
       } catch (error) {
@@ -73,7 +73,7 @@ export function TopArtist() {
 
     fetchArtists();
   }, []);
-  
+
   return (
     <div className="flex gap-8">
       {artists.length > 0 &&
