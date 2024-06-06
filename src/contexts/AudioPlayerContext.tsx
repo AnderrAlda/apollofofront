@@ -5,7 +5,7 @@ import {
   useEffect,
   ReactNode,
 } from "react";
-import { getAlbums } from "../utils";
+
 import { getTracks } from "../services/services.tracks";
 import { getAlbumsWithTracks } from "../services/services.albums";
 
@@ -44,18 +44,18 @@ interface Albums {
 
 const PlayerContext = createContext<PlayerContextType>({
   playing: false,
-  setPlaying: (value: boolean) => {},
+  setPlaying: (value: boolean) => { },
   currentTime: 0,
-  setCurrentTime: (value: number) => {},
+  setCurrentTime: (value: number) => { },
   currentSongIndex: 0,
-  setCurrentSongIndex: (value: number) => {},
+  setCurrentSongIndex: (value: number) => { },
   volume: 0.5,
-  setVolume: (value: number) => {},
+  setVolume: (value: number) => { },
   songs: [],
-  setSongs: (value: Song[]) => {},
+  setSongs: (value: Song[]) => { },
   albums: [],
   usingLiked: false,
-  setUsingLiked: (value: boolean) => {},
+  setUsingLiked: (value: boolean) => { },
 });
 
 export const usePlayer = () => {

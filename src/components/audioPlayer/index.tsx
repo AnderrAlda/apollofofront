@@ -15,10 +15,7 @@ import "./audioPlayer.css";
 import { usePlayer } from "../../contexts/AudioPlayerContext";
 
 import { useAuth } from "../../contexts/AuthContext";
-import {
-  addSongToUserLikedSongs,
-  // deleteSongFromUserLikedSongs,
-} from "../../utils";
+
 import { likeTrack } from "../../services/services.tracks";
 
 const AudioPlayer = () => {
@@ -41,7 +38,7 @@ const AudioPlayer = () => {
       console.log("todata" + songs[currentSongIndex].id);
       const updatedUser = await likeTrack(3, songs[currentSongIndex].id);
 
-      updateUser(updatedUser); 
+      updateUser(updatedUser);
     } catch (error) {
       console.error("Error adding song:", error);
     }
@@ -149,9 +146,8 @@ const AudioPlayer = () => {
             value={volume}
             onChange={handleVolumeChange}
             style={{
-              background: `linear-gradient(to right, blue ${
-                volume * 100
-              }%, transparent 0%)`,
+              background: `linear-gradient(to right, blue ${volume * 100
+                }%, transparent 0%)`,
               WebkitAppearance: "none",
             }}
           />
@@ -183,9 +179,8 @@ const AudioPlayer = () => {
             onChange={handleSeekChange}
             onMouseUp={handleSeekMouseUp}
             style={{
-              background: `linear-gradient(to right, blue ${
-                played * 100
-              }%, transparent 0%)`,
+              background: `linear-gradient(to right, blue ${played * 100
+                }%, transparent 0%)`,
               WebkitAppearance: "none",
             }}
           />

@@ -1,4 +1,4 @@
-/* import { Tracks, User } from "../utils/index.tsx";
+import { Tracks, User } from "../utils/index.tsx";
 
 export async function getTracks(): Promise<Tracks[]> {
   try {
@@ -32,7 +32,7 @@ export async function getUsers(): Promise<User[]> {
   }
 }
 
-export async function addSongToUserLikedSongs(
+/* export async function addSongToUserLikedSongs(
   userId: number,
   newSongId: number
 ): Promise<User> {
@@ -78,8 +78,8 @@ export async function addSongToUserLikedSongs(
     console.error("Error adding song to user's likedSongs:", error);
     throw error;
   }
-}
-export async function deleteSongFromUserLikedSongs(
+} */
+/* export async function deleteSongFromUserLikedSongs(
   userId: number,
   songIdToDelete: number
 ): Promise<void> {
@@ -114,7 +114,6 @@ export async function deleteSongFromUserLikedSongs(
   } catch (error) {
     console.error("Error deleting song from user's likedSongs:", error);
   }
-}
+} */
 
 export type { User };
- */
